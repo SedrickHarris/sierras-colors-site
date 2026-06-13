@@ -32,3 +32,8 @@
 - Merged Site OS reference docs into `docs` without overwriting any existing Sierra's Colors documentation.
 - Skipped development artifacts from the source repository: benchmark results, benchmarks, evals, test output, sample projects, and workflow tests.
 - Preserved the project's existing `CLAUDE.md`, `README.md`, and `.gitignore`.
+
+## 2026-06-12 Post-import build verification
+
+- Ran `npm run build` after importing the Site OS toolkit to confirm it did not break the build.
+- Build compiled, type checked, and statically exported all 34 routes with unchanged bundle sizes.
