@@ -17,3 +17,11 @@
 - Ran `npm install`.
 - Ran `npm run build` successfully.
 - Confirmed `/out` folder was generated.
+
+## 2026-06-12 Dependency registry fix and repository setup
+
+- Diagnosed a failed `npm install` caused by an unreachable internal registry, which had left `node_modules` partially corrupted.
+- Repointed `package-lock.json` resolved URLs to the public npm registry with no version changes, since the integrity hashes matched.
+- Added a project `.npmrc` setting the registry to the public npm registry.
+- Reinstalled dependencies and confirmed `npm run build` compiles, type checks, and statically exports all 34 routes.
+- Initialized the git repository, committed the project foundation, and pushed to the `sierras-colors-site` remote.
