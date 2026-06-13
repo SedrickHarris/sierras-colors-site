@@ -25,3 +25,10 @@
 - Added a project `.npmrc` setting the registry to the public npm registry.
 - Reinstalled dependencies and confirmed `npm run build` compiles, type checks, and statically exports all 34 routes.
 - Initialized the git repository, committed the project foundation, and pushed to the `sierras-colors-site` remote.
+
+## 2026-06-12 Imported site-os toolkit
+
+- Copied the reusable Site OS toolkit from the `site-os-master` repository into the project: `.claude` skills, `skills`, `prompts`, `checklists`, `schemas`, `page-templates`, `routing`, `tools`, `token-control`, `efficiency-governor`, and `versions`.
+- Merged Site OS reference docs into `docs` without overwriting any existing Sierra's Colors documentation.
+- Skipped development artifacts from the source repository: benchmark results, benchmarks, evals, test output, sample projects, and workflow tests.
+- Preserved the project's existing `CLAUDE.md`, `README.md`, and `.gitignore`.
